@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Symposium 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🎓 TECH SYMPOSIUM 2026</h2>
+    <h4><p class="subtitle">Department of Information Technology</p></h4>
+
+    <form id="registrationForm">
+
+        <label>Student Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email Address</label>
+        <input type="email" id="email" required>
+
+        <label>College Name</label>
+        <input type="text" required>
+
+        <label>Department</label>
+        <input type="text" required>
+
+        <label>Select Event</label>
+        <select id="event" onchange="showFee()" required>
+            <option value="">-- Choose Event --</option>
+            <option value="Paper Presentation">Paper Presentation</option>
+            <option value="Project Expo">Project Expo</option>
+            <option value="Technical Quiz">Technical Quiz</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+
+        <p id="fee" class="fee"></p>
+
+        <label>Mobile Number</label>
+        <input type="tel" required>
+
+        <label>Payment Mode</label>
+        <select id="paymentMode" onchange="paymentOption()" required>
+            <option value="">-- Select Mode --</option>
+            <option value="onsite">On-Site Payment</option>
+            <option value="online">Online Payment</option>
+        </select>
+
+        <div id="paymentMethods" class="hidden">
+            <label>Online Payment Method</label>
+            <select>
+                <option>Google Pay</option>
+                <option>PhonePe</option>
+                <option>Paytm</option>
+                <option>Debit / Credit Card</option>
+            </select>
+        </div>
+
+        <label class="checkbox">
+            <input type="checkbox" required> I confirm all details are correct
+        </label>
+
+        <button type="submit">Register</button>
+        <button type="reset" class="clear">Clear</button>
+
+    </form>
+
+    <div class="footer">
+        <p>📍 A.V.C College of Engineering</p>
+        <p>📅 15 March 2026</p>
+        <p>📞 9876543210</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
